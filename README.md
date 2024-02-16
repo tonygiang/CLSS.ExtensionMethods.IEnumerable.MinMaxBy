@@ -15,7 +15,7 @@ This package backports `MinBy` and `MaxBy` for .NET versions before .NET 6 that 
 
 Statically-checked type:
 
-```
+```csharp
 using CLSS;
 
 public struct CustomType
@@ -36,7 +36,7 @@ var max = collection.MaxBy(e => e.Schema);
 
 Null-checked key selector:
 
-```
+```csharp
 using CLSS;
 
 var numbers = new int[] { 6, 3, 17 };
@@ -44,7 +44,7 @@ var max = numbers.MaxBy(null); // Throws ArgumentNullException
 ```
 
 Empty-checked source collection:
-```
+```csharp
 using CLSS;
 
 var timestampts = new System.DateTime[0];
